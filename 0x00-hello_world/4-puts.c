@@ -2,8 +2,7 @@
 
 /**
  * main - Print a predefined sentence
- *
- * Return : 0 like end value
+ * Return: 0 like end value 
  */
 int main(void)
 {
