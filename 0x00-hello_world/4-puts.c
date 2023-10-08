@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - Print a predefined sentence
  * Return: 0 like end value 
