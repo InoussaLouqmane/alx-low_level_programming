@@ -1,3 +1,2 @@
 #!/bin/bash
-FILENAME=$(echo $CFILE | tr -d '.c');
-gcc -c "$CFILE" -o "$FILENAME.o";
+gcc -c "$CFILE" -o $(echo $CFILE | tr 'c' 'o');
