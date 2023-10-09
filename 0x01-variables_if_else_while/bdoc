@@ -1,0 +1,5 @@
+#!/bin/bash
+echo -e "\n-Betty -styl \n"; 
+../0x00-hello_world/Betty/betty-style.pl $1;
+echo -e "\n\n\n -Betty -doc \n";
+../0x00-hello_world/Betty/betty-doc.pl $1;
