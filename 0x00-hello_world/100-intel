@@ -1,2 +1,2 @@
-#!/bin/bash
-gcc -S -fgnu-tm "$CFILE" -o $(echo $CFILE | tr 'c' 's');
+#bin/bash 
+gcc -S -masm=intel "$CFILE" -o $(echo $CFILE | tr 'c' 's');
