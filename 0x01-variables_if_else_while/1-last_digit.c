@@ -19,7 +19,7 @@ int main(void)
 	printf("Last digit of %d is %d and is ", n, modulo);
 	if ((modulo < 6) && (modulo != 0))
 		printf("less than 6 and not 0\n");
-	else if (modulo == 5)
+	else if (modulo == 0)
 		printf("0\n");
 	else
 		printf("greater than 5\n");
