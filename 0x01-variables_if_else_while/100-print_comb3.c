@@ -1,6 +1,10 @@
 #include <stdio.h>
 /**
  * main - Entry point
+ *
+ * Description: Explanation
+ * This code print all possible different
+ * combinations of two digits.
  * Return: 0 as end value
  */
 int main(void)
@@ -12,7 +16,7 @@ int main(void)
 	{
 		for (j = 48; j < 58; j++)
 		{
-			if (i <= j)
+			if (i < j)
 			{
 				putchar(i);
 				putchar(j);
