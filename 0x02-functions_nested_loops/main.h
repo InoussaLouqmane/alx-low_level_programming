@@ -1,13 +1,11 @@
 #include <unistd.h>
 /**
- * print_sign - Say the sign of the number
+ * int _abs -Compute absolute value of an integer
  * @n: number entered
  *
- * Return: 1 and prints + if n is greater than zero
- * 0 and prints 0 if n is zero
- * -1 and prints - if n is less than zero
+ * Return: absolute value of n
  */
-int print_sign(int n);
+int _abs(int n);
 /**
  * _putchar - writes the character c to stdout
  * @c: The character to print
