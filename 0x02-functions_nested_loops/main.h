@@ -1,9 +1,12 @@
 #include <unistd.h>
 /**
- * times_table - Print 9 times table
+ * add - Add two number
+ * @a: first number
+ * @b: second number
  *
+ * Return: a+b
  */
-void times_table(void);
+int add(int a, int b);
 /**
  * _putchar - writes the character c to stdout
  * @c: The character to print
