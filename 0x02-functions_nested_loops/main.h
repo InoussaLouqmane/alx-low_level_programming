@@ -1,9 +1,16 @@
-#include <stdio.h>
 #include <unistd.h>
 /**
- * _putchar - print characters on screen
- * @c: the character to print
+ * print_alphabet - writes alphabet with
+ * lowercase letter
  *
- * Return: 1 if no occurs, 0 otherwise.
+ * Return: On success 0.
  */
-int _putchar (char c);
+void print_alphabet(void);
+/**
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+int _putchar(char c);
