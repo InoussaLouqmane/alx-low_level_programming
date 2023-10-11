@@ -1,12 +1,9 @@
 #include <unistd.h>
 /**
- * add - Add two number
- * @a: first number
- * @b: second number
- *
- * Return: a+b
+ * print_to_98 - Print all natural number from n to 98
+ * @n: natural number from which we start counting
  */
-int add(int a, int b);
+void print_to_98(int n);
 /**
  * _putchar - writes the character c to stdout
  * @c: The character to print
