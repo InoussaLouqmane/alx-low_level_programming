@@ -1,8 +1,9 @@
 #include <unistd.h>
 /**
- * jack_bauer - Print 00:00
+ * times_table - Print 9 times table
+ *
  */
-void jack_bauer(void);
+void times_table(void);
 /**
  * _putchar - writes the character c to stdout
  * @c: The character to print
