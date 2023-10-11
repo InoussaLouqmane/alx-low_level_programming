@@ -1,14 +1,27 @@
-#include <stdio.h>
+#include <unistd.h>
 #include "main.h"
 /**
- * main - Entry point
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
  *
- * Description: This program just
- * print alphabet with lowercase letter
- * Return: 0 as end value;
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
-int main(void)
+int _putchar(char c)
 {
-	print_alphabet();
-	return (0);
+	return (write(1, &c, 1));
+}
+/**
+ * print_alphabet - writes alphabet with
+ * lowercase letter
+ *
+ * Return: On success 0.
+ */
+void print_alphabet(void)
+{
+	int i;
+
+	for (i = 97; i <= 122; i++)
+		_putchar(i);
+	_putchar('\n');
 }
