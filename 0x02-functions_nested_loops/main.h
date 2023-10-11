@@ -1,11 +1,12 @@
 #include <unistd.h>
 /**
- * int _abs -Compute absolute value of an integer
+ * print_last_digit - Print the last digit
+ * of the number entered
  * @n: number entered
  *
- * Return: absolute value of n
+ * Return: last digit value of n
  */
-int _abs(int n);
+int print_last_digit(int n);
 /**
  * _putchar - writes the character c to stdout
  * @c: The character to print
