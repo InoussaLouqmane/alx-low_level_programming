@@ -1,12 +1,13 @@
 #include <unistd.h>
 /**
- * _isalpha - Say if a letter
- * @c: Character entered
+ * print_sign - Say the sign of the number
+ * @n: number entered
  *
- * Return: 0 if c is letter
- * 1 otherwise
+ * Return: 1 and prints + if n is greater than zero
+ * 0 and prints 0 if n is zero
+ * -1 and prints - if n is less than zero
  */
-int _isalpha(int c);
+int print_sign(int n);
 /**
  * _putchar - writes the character c to stdout
  * @c: The character to print
