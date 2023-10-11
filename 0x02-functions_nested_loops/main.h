@@ -1,11 +1,13 @@
 #include <unistd.h>
 /**
- * print_alphabet_x10 - writes alphabet with
- * lowercase letter
+ * _islower - Say if a character
+ * is lowercase or not
+ * @c: Character entered
  *
- * Return: On success 0.
+ * Return: 0 if c is lowercase
+ * 1 otherwise
  */
-void print_alphabet_x10(void);
+int _islower(int c);
 /**
  * _putchar - writes the character c to stdout
  * @c: The character to print
@@ -13,4 +15,4 @@ void print_alphabet_x10(void);
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
-int _putchar(char c);
+int _putchar(char c); 
