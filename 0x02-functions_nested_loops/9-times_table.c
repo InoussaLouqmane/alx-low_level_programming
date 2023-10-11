@@ -20,6 +20,10 @@ void times_table(void)
 			{
 				_putchar(48 + dizaine);
 			}
+			else
+			{
+				_putchar(' ');
+			}
 			_putchar(48 + unite);
 			if (j != 9)
 			{
