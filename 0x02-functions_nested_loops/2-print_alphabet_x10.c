@@ -1,12 +1,12 @@
 #include <unistd.h>
 #include "main.h"
 /**
- * print_alphabet - writes alphabet with
+ * print_alphabet_x10 - writes alphabet with
  * lowercase lette ten times
  *
  * Return: On success 0.
  */
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {
 	int i;
 	int j;

@@ -1,11 +1,11 @@
 #include <unistd.h>
 /**
- * print_alphabet - writes alphabet with
+ * print_alphabet_x10 - writes alphabet with
  * lowercase letter
  *
  * Return: On success 0.
  */
-void print_alphabet(void);
+void print_alphabet_x10(void);
 /**
  * _putchar - writes the character c to stdout
  * @c: The character to print
