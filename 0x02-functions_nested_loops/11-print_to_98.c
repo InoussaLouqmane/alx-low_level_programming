@@ -7,11 +7,17 @@ void print_to_98(int n)
 {
 	int i;
 	int j;
-
-	for (i = 48; i <= 57; i++)
-		for (j = 48; j <= 57; j++)
+	int dizaine = (int) (n / 10);
+	int unite = (n % 10);
+	
+	unite += 48;
+	dizaine += 48;
+	
+	for (i = dizaine; i <= 57; i++)
+	{
+		for (j = unite; j <= 57; j++)
 		{
-			if (i > 48)
+			if (i != 48)
 				_putchar(i);
 			_putchar(j);
 			if (i == 57 && j == 56)
@@ -24,5 +30,14 @@ void print_to_98(int n)
 				_putchar(' ');
 			}
 		}
-	_putchar('\n');
+		_putchar('\n');
+	}
 }
+if (n < 0)
+{
+	for (i = (57 + dizaine); i >= 48; i--)
+	{
+		for (j = (57 + unite); j >= 57; j--)
+		{
+			_putchar('-');
+			_putchar(	
