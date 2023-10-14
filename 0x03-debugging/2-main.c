@@ -8,16 +8,17 @@
 
 int main(void)
 {
-        int a, b, c;
-        int largest;
+        float a, b, c;
+        float largest;
+	
+	while (1)
+	{
+		scanf("%f %f %f", &a,&b,&c);
+        	largest = largest_number(a, b, c);
+        	printf("%.0f is the largest number\n", largest);
+	}
 
-        a = 80;
-        b = -98;
-        c = 80;
 
-        largest = largest_number(a, b, c);
-
-        printf("%d is the largest number\n", largest);
 
         return (0);
 }

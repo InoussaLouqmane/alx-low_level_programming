@@ -10,6 +10,6 @@
  *
  * Return: The largest number
  */
-int largest_number(int a, int b, int c);
+float largest_number(float a, float b, float c);
 
 #endif /* MAIN_H */
