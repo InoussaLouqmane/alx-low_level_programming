@@ -2,13 +2,13 @@
 #include "main.h"
 
 /**
- * print_rev - print a string in rever
- * @s: pointer that point to the string
+ * rev_string - Reverse a string
+ * @s: a pointer that point to the string
  *
  * Return: void
  */
 
-void print_rev(char *s)
+void rev_string(char *s)
 {
 	int i = 0;
 
@@ -16,10 +16,11 @@ void print_rev(char *s)
 	{
 		i++;
 	}
+
 	i--;
 	while (i >= 0)
 	{
-		_putchar(str[i]);
+		*s[i] = 
 		i--;
 	}
 	_putchar('\n');

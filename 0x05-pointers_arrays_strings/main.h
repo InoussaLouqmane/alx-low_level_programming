@@ -56,3 +56,11 @@ void print_rev(char *s);
  * On error, -1 is returned, and errno is set appropriately.
  */
 int _putchar(char c);
+
+/**
+ * rev_string - Reverse a string
+ * @s: a pointer that point to the string
+ *
+ * Return: void
+ */
+void rev_string(char *s);
