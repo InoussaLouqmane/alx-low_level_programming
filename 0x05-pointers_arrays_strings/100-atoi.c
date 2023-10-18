@@ -50,11 +50,38 @@ int addition(char caracter, int n)
 }
 
 /**
+ * _signGiver - Count how many time - occurs in a range
+ * and give a final sign
+ * @str: the string to treat
+ * @n: Range Ending Point
+ *
+ * Return: -1 if number of - is odd
+ * 1 if not odd
+ */
+int _signGiver(char *str, int n)
+{
+	int i = 0;
+	int minusCounter = 0;
+
+	for (i = 0; i < n; i++)
+	{
+		if ((*str + i) == 45)
+			minusCounter++;
+	}
+	if (minusCounter % 2)
+	{
+		return (-1);
+	}
+	return (1);
+}
+
+/**
  * _atoi - convert a string to an integer
  * @s: The string to be converted
  *
  * Return: the number
  */
+
 int _atoi(char *s)
 {
 	int i = 0;
@@ -74,10 +101,7 @@ int _atoi(char *s)
 				power_indice--;
 				sum += addition(s[j], power_indice);
 			}
-			if (s[i - 1] == 45)
-			{
-				sum *= -1;
-			}
+			sum *= _signGiver(s, i);
 			return (sum);
 		}
 		i++;

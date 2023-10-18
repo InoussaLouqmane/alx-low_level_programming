@@ -97,3 +97,12 @@ int _atoi(char *s);
  * Return: void
  */
 void print_array(int *a, int n);
+
+/**
+ * _strcpy - copy a string content to another one
+ * @dest: destination string
+ * @src: source string
+ *
+ * Return: dest
+ */
+char *_strcpy(char *dest, char *src);
