@@ -64,3 +64,11 @@ int _putchar(char c);
  * Return: void
  */
 void rev_string(char *s);
+
+/**
+ * puts2 - Print all other character of a string
+ * @str: The string that we will consider
+ *
+ * Return: void
+ */
+void puts2(char *str);
