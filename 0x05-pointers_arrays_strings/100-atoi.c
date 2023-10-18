@@ -86,7 +86,7 @@ int _atoi(char *s)
 {
 	int i = 0;
 	int j = 0;
-	long int sum = 0;
+	int sum = 0;
 	int numberlen = 0;
 	int power_indice = 0;
 
