@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * power - return a 10 puissance n
  * @n: puissance number
@@ -65,10 +65,10 @@ int _signGiver(char *str, int n)
 
 	for (i = 0; i < n; i++)
 	{
-		if ((*str + i) == 45)
+		if (*(str + i) == 45)
 			minusCounter++;
 	}
-	if (minusCounter % 2)
+	if (minusCounter % 2 == 1)
 	{
 		return (-1);
 	}
