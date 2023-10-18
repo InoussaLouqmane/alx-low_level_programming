@@ -88,3 +88,12 @@ void puts_half(char *str);
  * Return: void
  */
 int _atoi(char *s);
+
+/**
+ * print_array - prints element of an array
+ * @a: a pointer to the array
+ * @n: number of elements that we should display;
+ *
+ * Return: void
+ */
+void print_array(int *a, int n);
