@@ -72,3 +72,19 @@ void rev_string(char *s);
  * Return: void
  */
 void puts2(char *str);
+
+/**
+ * puts_half - Print the other half of a string
+ * @str: The string that we will consider
+ *
+ * Return: void
+ */
+void puts_half(char *str);
+
+/**
+ * _atoi - convert a string to an integer
+ * @s: The string to be converted
+ *
+ * Return: void
+ */
+int _atoi(char *s);
