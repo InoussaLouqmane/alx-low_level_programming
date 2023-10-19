@@ -27,22 +27,17 @@ int _strlen(char *str)
 char *_strcat(char *dest, char *src)
 {
 	int dest_strlen = 0;
-	int src_strlen = 0;
 	int sum_strlen = 0;
 	int i = 0;
-	char *concat;
+	int j = 0;
 
 	dest_strlen = _strlen(dest);
-	src_strlen = _strlen(src);
-	sum_strlen = dest_strlen + src_strlen;
-
-	for (i = 0; i < dest_strlen; i++)
+	sum_strlen = dest_strlen + _strlen(src);
+	
+	for (i = dest_strlen; i <= sum_strlen; i++)
 	{
-		*(concat + i) = *(dest + i);
+		*(dest + i) = *(src + j);
+		j++;
 	}
-	for (i = 0; i <= src_strlen; i++)
-	{
-		*(concat + i) = *(src + i);
-	}
-	return (concat);
+	return (dest);
 }
