@@ -33,7 +33,6 @@ char *_strcat(char *dest, char *src)
 
 	dest_strlen = _strlen(dest);
 	sum_strlen = dest_strlen + _strlen(src);
-	
 	for (i = dest_strlen; i <= sum_strlen; i++)
 	{
 		*(dest + i) = *(src + j);
