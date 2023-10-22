@@ -17,3 +17,14 @@ int _putchar(char c);
  * Return: a point on the new string
  */
 char *_strcat(char *dest, char *src);
+
+/**
+ * _strcat - add n character(s) from second string to
+ * first one
+ * @dest: First string
+ * @src: Second String
+ * @n: number of characters
+ *
+ * Return: a point on the new string
+ */
+char *_strncat(char *dest, char *src, int n);
