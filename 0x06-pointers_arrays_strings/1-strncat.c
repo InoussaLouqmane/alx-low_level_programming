@@ -16,9 +16,8 @@ int _strlen(char *str)
 	}
 	return (i);
 }
-	
 /**
- * _strcat - add n character(s) from second string to
+ * _strncat - add n character(s) from second string to
  * first one
  * @dest: First string
  * @src: Second String
