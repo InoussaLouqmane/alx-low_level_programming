@@ -4,3 +4,4 @@ main.c
 test.c
 _putchar.c
 _putchar
+err.c
