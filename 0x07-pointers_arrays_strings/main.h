@@ -29,4 +29,14 @@ char *_memset(char *s, char b, unsigned int n);
  * Return: A pointer to the new memory area
  */
 char *_memcpy(char *dest, char *src, unsigned int n);
+
+/**
+ * _strchr - a function that locate a character in a string
+ * @s: A pointer to a string
+ * @c: The character we are seaching for
+ *
+ * Return: a pointer to the position
+ */
+
+char *_strchr(char *s, char c);
 #endif /* _MAIN_H_ */
