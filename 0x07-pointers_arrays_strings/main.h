@@ -39,4 +39,15 @@ char *_memcpy(char *dest, char *src, unsigned int n);
  */
 
 char *_strchr(char *s, char c);
+
+/**
+ * _strspn - Returns the number of bytes in the initial segment of s which
+ * consist only of bytes from accept
+ * @s: the string
+ * @accept: the pattern
+ *
+ * Return: the number of bytes
+ */
+unsigned int _strspn(char *s, char *accept);
+
 #endif /* _MAIN_H_ */
