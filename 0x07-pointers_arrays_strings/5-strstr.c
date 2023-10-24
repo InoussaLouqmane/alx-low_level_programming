@@ -12,15 +12,15 @@
  */
 int str_match(char *str, char *pattern, int n)
 {
-	int pattern_strlen = 0;
 	int range = n;
 	int i = 0;
 
-	while (pattern[pattern_strlen] != '\0')
+	while (pattern[i] != '\0')
 	{
-		pattern_strlen++;
+		i++;
 	}
-	range += pattern_strlen;
+	range += i;
+	i = 0;
 	while ((str[n] != '\0') && (n < range))
 	{
 		if (str[n] != pattern[i])
