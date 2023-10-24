@@ -50,4 +50,15 @@ char *_strchr(char *s, char c);
  */
 unsigned int _strspn(char *s, char *accept);
 
+/**
+ * _strpbrk - function locates the first occurrence in the string s of
+ * any of the bytes in the string accept
+ * @s: the string to be treated
+ * @accept: the reference string
+ *
+ * Return: pointer to the byte in s that matches one of the bytes
+ * in accept, or NULL if no such byte is found
+ */
+char *_strpbrk(char *s, char *accept);
+
 #endif /* _MAIN_H_ */
