@@ -46,5 +46,6 @@ int Checkstate(char *str, int strlen, int n)
 int is_palindrome(char *s)
 {
 	int strlen = _strlen_recursion(s);
-	return (Checkstate(s, strlen, 0));	
+
+	return (Checkstate(s, strlen, 0));
 }
