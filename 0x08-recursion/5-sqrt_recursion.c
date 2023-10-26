@@ -2,7 +2,6 @@
 #include <stdio.h>
 
 /**
- *
  * find_sqroot - square root of a given number
  * @n: the range of iteration
  * @goal: the number we are searching for
@@ -11,6 +10,7 @@
  * natural squaroot
  * the squaroot
  */
+
 int find_sqroot(int n, int goal)
 {
 	if ((n * n) == goal)
