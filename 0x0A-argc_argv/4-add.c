@@ -11,14 +11,28 @@
  */
 int main(int argc, char *argv[])
 {
-	if (argc != 3)
+	int i = 0;
+	int elt = 0;
+	int sum = 0;
+
+	if (argc == 1)
 	{
-		printf("Error\n");
+		printf("0\n");
 		return (1);
 	}
 	else
 	{
-		printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
+		for (i = 1; i < argc ; i++)
+		{
+			elt = atoi(argv[i]);
+			if (elt == 0)
+			{
+				printf("Error\n");
+				return (1);
+			}
+			sum += elt;
+		}
+		printf("%d\n", sum);
 	}
 	return (EXIT_SUCCESS);
 }
