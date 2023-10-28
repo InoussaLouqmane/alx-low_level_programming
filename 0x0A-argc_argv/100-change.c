@@ -55,9 +55,13 @@ int main(int argc, char *argv[])
 	}
 		cents = atoi(argv[1]);
 		if (cents < 0)
+		{
 			printf("0\n");
+		}
 		else
+		{
 			number = change_break(cents);
-	printf("%d\n", number);
+			printf("%d\n", number);
+		}
 	return (EXIT_SUCCESS);
 }
