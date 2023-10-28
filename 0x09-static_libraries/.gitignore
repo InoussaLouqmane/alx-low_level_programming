@@ -43,3 +43,5 @@ bdoc main.c
 6-abs.o
 9-strcpy.o
 _putchar.o
+bdoc
+liball.a
