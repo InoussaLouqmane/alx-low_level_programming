@@ -35,4 +35,13 @@ char *_strdup(char *str);
  * Return: a pointer to the concatenated string
  */
 char *str_concat(char *s1, char *s2);
+/**
+ * alloc_grid - return a pointer to a grid
+ * @width: width of the grid
+ * @height: height of the grid
+ *
+ * Return: a pointer to the grid
+ */
+int **alloc_grid(int width, int height);
+
 #endif /* _MAIN_H_ */

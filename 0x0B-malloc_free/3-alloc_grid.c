@@ -1,0 +1,32 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include "main.h"
+
+/**
+ * alloc_grid - return a pointer to a grid
+ * @width: width of the grid
+ * @height: height of the grid
+ *
+ * Return: a pointer to the grid
+ */
+int **alloc_grid(int width, int height)
+{
+	int i = 0;
+	int j = 0;
+	int **grid;
+
+	if (width <= 0 || height <= 0)
+		return (NULL);
+
+	grid = malloc(sizeof(int) * height);
+
+	for (i = 0; i < height; i++)
+	{
+		*(grid + i) = malloc(sizeof(int) * width);
+		for (j = 0; j < width; j++)
+		{
+			*(*(grid + i) + j) = 0;
+		}
+	}
+	return (grid);
+}
