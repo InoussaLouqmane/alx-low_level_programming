@@ -54,7 +54,7 @@ char *argstostr(int ac, char **av)
 	if (ac <= 1 || av == NULL)
 		return (NULL);
 
-	for (i = 1; i < ac; i++)
+	for (i = 0; i < ac; i++)
 	{
 		sum += strlen_(av[i]) + 1;
 	}
@@ -64,7 +64,7 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	sum = 0;
 
-	for (i = 1; i < ac; i++)
+	for (i = 0; i < ac; i++)
 	{
 		len = strlen_(av[i]);
 
