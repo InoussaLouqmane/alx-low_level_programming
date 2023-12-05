@@ -51,7 +51,7 @@ char *argstostr(int ac, char **av)
 	char *concat;
 	int i, len, sum = 0;
 
-	if (ac <= 1 || av == NULL)
+	if (ac < 1 || av == NULL)
 		return (NULL);
 
 	for (i = 0; i < ac; i++)
