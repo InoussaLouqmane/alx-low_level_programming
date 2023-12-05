@@ -43,5 +43,5 @@ char *str_concat(char *s1, char *s2);
  * Return: a pointer to the grid
  */
 int **alloc_grid(int width, int height);
-
+void free_grid(int **grid, int height);
 #endif /* _MAIN_H_ */
