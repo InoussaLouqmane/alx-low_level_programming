@@ -9,7 +9,7 @@
  */
 char *_strdup(char *str)
 {
-	int strlen = 0;
+	int strlen = 1;
 	int i = 0;
 	char *new_addr;
 
@@ -27,7 +27,7 @@ char *_strdup(char *str)
 	if (new_addr == NULL)
 		return (NULL);
 
-	for (i = 0; i <= strlen; i++)
+	for (i = 0; i < strlen; i++)
 	{
 		new_addr[i] = str[i];
 	}
