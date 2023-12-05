@@ -17,4 +17,13 @@ int _putchar(char c);
  * Return: NULL if size is 0 or a pointer if it fails
  */
 char *create_array(unsigned int size, char c);
+
+/**
+ * _strdup - returns a pointer to the duplicated string
+ * @str: a pointer to the original string
+ *
+ * Return: NULL if str is NULL, a pointer otherwise
+ */
+char *_strdup(char *str);
+
 #endif /* _MAIN_H_ */
