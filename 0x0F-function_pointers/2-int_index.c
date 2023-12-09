@@ -7,7 +7,7 @@
  * @array: the array to be treated;
  * @size: size of the array;
  * @cmp: a pointer to the function
- * 
+ *
  * Return: the index of the first element;
  */
 int int_index(int *array, int size, int (*cmp)(int))
