@@ -28,5 +28,5 @@ op_t ops[] = {
 			return (ops[i].f);
 		i++;
 	}
-	return (ops[5].f);
+	return (NULL);
 }
