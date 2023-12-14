@@ -72,7 +72,7 @@ void print_all(const char * const format, ...)
 
 	va_start(ap, format);
 
-	while (format[len] != '\0')
+	while ((format != NULL) && (format[len] != '\0'))
 	{
 		good = 0;
 		switch (format[len])
