@@ -30,11 +30,11 @@ void print_binary(unsigned long int n)
 
 		if ((bin & n) == cat)
 		{
-			printf("1");
+			putchar('1');
 		}
 		else
 		{
-			printf("0");
+			putchar('0');
 		}
 		bin >>= 1;
 		cat >>= 1;
