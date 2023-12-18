@@ -1,51 +1,57 @@
 #include <stdlib.h>
 #include <fcntl.h>
-#include <stdio.h>
 #include <unistd.h>
 #include "main.h"
-
 /**
- * read_textfile - reads a text file and prints it to
- * the POSIX standard output.
- * @filename: the file to be read
- * @letters: number of letters to be printed
+ * cleaner - cleaner stream and memory on fail
+ * @fd: the file descriptor to clean
+ * @string: The string to be processed
  *
- * Return: the actual number of letter print
+ * Return: Always 0
+ */
+int cleaner(int fd, char *string)
+{
+	close(fd);
+	free(string);
+	return (0);
+}
+/**
+ * read_textfile - print text from a file
+ * @filename: is the filename
+ * @letters: the number of letters
+ *
+ * Return: The actual number of letters printed
  */
 ssize_t read_textfile(const char *filename, size_t letters)
+
 {
-	int fp;
-	int actual, wrotechars;
-	char *buffer;
+	int fd, read_bytes, writen_bytes = 0;
+	char *string;
 
-	if (filename == NULL || letters == 0)
+	if (filename == NULL)
 		return (0);
 
-	buffer = malloc(sizeof(char) * letters);
+	string = malloc(sizeof(char) * letters);
+	fd = open(filename, O_RDONLY);
 
-	if (buffer == NULL)
+	if (string == NULL)
 		return (0);
 
-	fp = open(filename, O_RDONLY);
+	if (fd == -1)
+		return (cleaner(fd, string));
 
-	if (fp == -1)
-	{
-		free(buffer);
-		return (0);
-	}
+	read_bytes = read(fd, string, sizeof(char) * letters);
 
-	actual = read(fp, buffer, letters);
+	if (read_bytes == -1)
+		return (cleaner(fd, string));
 
-	if (actual == -1)
-	{
-		free(buffer);
-		close(fp);
-		return (0);
-	}
-	wrotechars = write(1, buffer, actual);
-	free(buffer);
-	close(fp);
-	if (wrotechars != actual)
-		return (0);
-	return (actual);
+	writen_bytes = write(STDOUT_FILENO, string, read_bytes);
+
+	close(fd);
+
+	if (writen_bytes == -1 || (writen_bytes != read_bytes))
+		return (cleaner(fd, string));
+
+	free(string);
+	return (writen_bytes);
 }
