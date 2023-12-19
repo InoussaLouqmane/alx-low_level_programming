@@ -26,7 +26,7 @@ int main(int argc, char **argv)
 
 	writen_fd = open(argv[2], O_WRONLY | O_TRUNC | O_CREAT, 0644);
 
-	while ((read_bytes = read(read_fd, buffer, 1024)) > 0)
+	while ((read_bytes = read(read_fd, buffer, sizeof(buffer))) > 0)
 	{
 		if (read_fd == -1 || read_bytes == -1)
 		{
