@@ -9,8 +9,8 @@
  * Return: 0 on success
  * anything else on failure
  */
-int main(__attribute__((unused)) int argc, char *argv[])
+int main(int argc __attribute__((unused)), char *argv[] __attribute__((unused)))
 {
-	printf("%d\n", argc - 1);
+	printf("%d\n", (argc - 1));
 	return (EXIT_SUCCESS);
 }
