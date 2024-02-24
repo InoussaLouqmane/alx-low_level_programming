@@ -1,4 +1,6 @@
 #include <unistd.h>
+
+void print_alphabet(void);
 /**
  * print_to_98 - Print all natural number from n to 98
  * @n: natural number from which we start counting
